@@ -11,6 +11,7 @@ public class Game {
     public static int smallDog = 0;
     public static int lastGreenResult = 0;
     public static int lastRedResult = 0;
+    public static Boolean shaking = true;
 
 
     //String zmienna;

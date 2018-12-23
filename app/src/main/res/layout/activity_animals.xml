@@ -195,6 +195,7 @@
         android:layout_height="100dp"
         android:layout_marginEnd="220dp"
         android:layout_marginTop="64dp"
+        android:onClick="los"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
         app:srcCompat="@drawable/greendice" />
@@ -205,6 +206,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="220dp"
         android:layout_marginTop="64dp"
+        android:onClick="los"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
         app:srcCompat="@drawable/reddice" />
@@ -217,6 +219,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="los"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
         app:layout_constraintHorizontal_bias="0.446"
@@ -233,6 +236,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="los"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintHorizontal_bias="0.489"
@@ -464,7 +468,7 @@
                     android:layout_width="160dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/big_dog" />
+                    app:srcCompat="@drawable/small_dog" />
 
                 <ImageButton
                     android:id="@+id/sheepMinus2"

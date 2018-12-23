@@ -1,5 +1,6 @@
 package com.example.gosia.farmer;
 
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import java.util.Random;
 
 public class diceActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class diceActivity extends AppCompatActivity {
     }
 
     public void losuj(View view){
+
         TextView greenText = (TextView)findViewById(R.id.greenResult);
         greenText.setText(greenDice());
         TextView redText = (TextView)findViewById(R.id.redResult);

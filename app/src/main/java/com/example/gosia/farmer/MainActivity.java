@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.gra = new Game("helloGame");
+        Intent intent = new Intent(this, animalsActivity.class);
+        startActivity(intent);
 
     }
     @Override

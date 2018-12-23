@@ -1,16 +1,20 @@
 package com.example.gosia.farmer;
 
 import android.content.Intent;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class animalsActivity extends AppCompatActivity {
 
-
+    Shaker shaker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -131,4 +135,16 @@ public class animalsActivity extends AppCompatActivity {
         Game.smallDog++;
         changeTextbox();
     }
+    public void los(View view){
+        Log.e("los", "entered");
+        ImageView greenImage = (ImageView)findViewById(R.id.greenLastResult);
+        ImageView redImage  = (ImageView)findViewById(R.id.redLastResult);
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        shaker = new Shaker(getApplicationContext(), sensorManager, greenImage, redImage);
+
+
+    }
+
+
+
 }
